@@ -8,3 +8,4 @@ Using drawGraph.py directly can generate .dot files for each class and use .dot 
 
 In addition, it is recommended to use jupyter notebook to copy the drawCF() and drawCFG() functions in drawGraph.py, which will be a bit faster than running drawGraph.py directly to generate .dot files and .svg images.
 
+By AST graph, We select a few classes to use the Eclipse plugin to get the textual representation of the AST, and then use drawAST.py to draw the graphics. 
