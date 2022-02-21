@@ -1,0 +1,76 @@
+digraph "DirectedGraph" {
+graph [label = "getOptions", labelloc=t, concentrate = true];
+"13803304" [ label="(/**  * Gets an array of the processed {@link Option}s. * @return an array of the processed {@link Option}s. */ public Option[] getOptions(){  final Collection<Option> processed=options;  final Option[] optionsArray=new Option[processed.size()];  return processed.toArray(optionsArray); } ,MethodDeclaration,220,233)" type=31 startLineNumber=220 endLineNumber=233 ]
+"802243390" [ label="(/**  * Gets an array of the processed {@link Option}s. * @return an array of the processed {@link Option}s. */ ,Javadoc,220,224)" type=29 startLineNumber=220 endLineNumber=224 ]
+"702061917" [ label="(public,Modifier,225,225)" type=83 startLineNumber=225 endLineNumber=225 ]
+"890545344" [ label="(Option[],ArrayType,225,225)" type=5 startLineNumber=225 endLineNumber=225 ]
+"556488341" [ label="(Option,SimpleType,225,225)" type=43 startLineNumber=225 endLineNumber=225 ]
+"71706941" [ label="(Option,SimpleName,225,225)" type=42 startLineNumber=225 endLineNumber=225 ]
+"1771667101" [ label="(getOptions,SimpleName,225,225)" type=42 startLineNumber=225 endLineNumber=225 ]
+"2033968586" [ label="({  final Collection<Option> processed=options;  final Option[] optionsArray=new Option[processed.size()];  return processed.toArray(optionsArray); } ,Block,225,233)" type=8 startLineNumber=225 endLineNumber=233 ]
+"48208774" [ label="(final Collection<Option> processed=options; ,VariableDeclarationStatement,226,226)" type=60 startLineNumber=226 endLineNumber=226 ]
+"929383713" [ label="(final,Modifier,226,226)" type=83 startLineNumber=226 endLineNumber=226 ]
+"363509958" [ label="(Collection<Option>,ParameterizedType,226,226)" type=74 startLineNumber=226 endLineNumber=226 ]
+"865667596" [ label="(Collection,SimpleType,226,226)" type=43 startLineNumber=226 endLineNumber=226 ]
+"1306834002" [ label="(Collection,SimpleName,226,226)" type=42 startLineNumber=226 endLineNumber=226 ]
+"1354083458" [ label="(Option,SimpleType,226,226)" type=43 startLineNumber=226 endLineNumber=226 ]
+"270095066" [ label="(Option,SimpleName,226,226)" type=42 startLineNumber=226 endLineNumber=226 ]
+"1806431167" [ label="(processed=options,VariableDeclarationFragment,226,226)" type=59 startLineNumber=226 endLineNumber=226 ]
+"50699452" [ label="(processed,SimpleName,226,226)" type=42 startLineNumber=226 endLineNumber=226 ]
+"2125062626" [ label="(options,SimpleName,226,226)" type=42 startLineNumber=226 endLineNumber=226 ]
+"620557167" [ label="(final Option[] optionsArray=new Option[processed.size()]; ,VariableDeclarationStatement,229,229)" type=60 startLineNumber=229 endLineNumber=229 ]
+"285133380" [ label="(final,Modifier,229,229)" type=83 startLineNumber=229 endLineNumber=229 ]
+"1068586139" [ label="(Option[],ArrayType,229,229)" type=5 startLineNumber=229 endLineNumber=229 ]
+"245765246" [ label="(Option,SimpleType,229,229)" type=43 startLineNumber=229 endLineNumber=229 ]
+"1292040526" [ label="(Option,SimpleName,229,229)" type=42 startLineNumber=229 endLineNumber=229 ]
+"726181440" [ label="(optionsArray=new Option[processed.size()],VariableDeclarationFragment,229,229)" type=59 startLineNumber=229 endLineNumber=229 ]
+"510147134" [ label="(optionsArray,SimpleName,229,229)" type=42 startLineNumber=229 endLineNumber=229 ]
+"542365801" [ label="(new Option[processed.size()],ArrayCreation,229,229)" type=3 startLineNumber=229 endLineNumber=229 ]
+"2051120548" [ label="(Option[],ArrayType,229,229)" type=5 startLineNumber=229 endLineNumber=229 ]
+"341138954" [ label="(Option,SimpleType,229,229)" type=43 startLineNumber=229 endLineNumber=229 ]
+"1270038388" [ label="(Option,SimpleName,229,229)" type=42 startLineNumber=229 endLineNumber=229 ]
+"1973233403" [ label="(processed.size(),MethodInvocation,229,229)" type=32 startLineNumber=229 endLineNumber=229 ]
+"63387985" [ label="(processed,SimpleName,229,229)" type=42 startLineNumber=229 endLineNumber=229 ]
+"1029472813" [ label="(size,SimpleName,229,229)" type=42 startLineNumber=229 endLineNumber=229 ]
+"1866875501" [ label="(return processed.toArray(optionsArray); ,ReturnStatement,232,232)" type=41 startLineNumber=232 endLineNumber=232 ]
+"1936722816" [ label="(processed.toArray(optionsArray),MethodInvocation,232,232)" type=32 startLineNumber=232 endLineNumber=232 ]
+"1237825806" [ label="(processed,SimpleName,232,232)" type=42 startLineNumber=232 endLineNumber=232 ]
+"282265585" [ label="(toArray,SimpleName,232,232)" type=42 startLineNumber=232 endLineNumber=232 ]
+"1297836716" [ label="(optionsArray,SimpleName,232,232)" type=42 startLineNumber=232 endLineNumber=232 ]
+"13803304" -> "802243390"
+"13803304" -> "702061917"
+"13803304" -> "890545344"
+"890545344" -> "556488341"
+"556488341" -> "71706941"
+"13803304" -> "1771667101"
+"13803304" -> "2033968586"
+"2033968586" -> "48208774"
+"48208774" -> "929383713"
+"48208774" -> "363509958"
+"363509958" -> "865667596"
+"865667596" -> "1306834002"
+"363509958" -> "1354083458"
+"1354083458" -> "270095066"
+"48208774" -> "1806431167"
+"1806431167" -> "50699452"
+"1806431167" -> "2125062626"
+"2033968586" -> "620557167"
+"620557167" -> "285133380"
+"620557167" -> "1068586139"
+"1068586139" -> "245765246"
+"245765246" -> "1292040526"
+"620557167" -> "726181440"
+"726181440" -> "510147134"
+"726181440" -> "542365801"
+"542365801" -> "2051120548"
+"2051120548" -> "341138954"
+"341138954" -> "1270038388"
+"542365801" -> "1973233403"
+"1973233403" -> "63387985"
+"1973233403" -> "1029472813"
+"2033968586" -> "1866875501"
+"1866875501" -> "1936722816"
+"1936722816" -> "1237825806"
+"1936722816" -> "282265585"
+"1936722816" -> "1297836716"
+}

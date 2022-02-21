@@ -1,0 +1,26 @@
+digraph "DirectedGraph" {
+graph [label = "getMatchingOptions", labelloc=t, concentrate = true];
+"1816147548" [ label="(/**  * Gets the options matching the partial name. * @return a collection of options matching the name */ public Collection<String> getMatchingOptions(){  return matchingOptions; } ,MethodDeclaration,74,81)" type=31 startLineNumber=74 endLineNumber=81 ]
+"2079179914" [ label="(/**  * Gets the options matching the partial name. * @return a collection of options matching the name */ ,Javadoc,74,78)" type=29 startLineNumber=74 endLineNumber=78 ]
+"20049680" [ label="(public,Modifier,79,79)" type=83 startLineNumber=79 endLineNumber=79 ]
+"1437654187" [ label="(Collection<String>,ParameterizedType,79,79)" type=74 startLineNumber=79 endLineNumber=79 ]
+"951050903" [ label="(Collection,SimpleType,79,79)" type=43 startLineNumber=79 endLineNumber=79 ]
+"770947228" [ label="(Collection,SimpleName,79,79)" type=42 startLineNumber=79 endLineNumber=79 ]
+"590646109" [ label="(String,SimpleType,79,79)" type=43 startLineNumber=79 endLineNumber=79 ]
+"1882349076" [ label="(String,SimpleName,79,79)" type=42 startLineNumber=79 endLineNumber=79 ]
+"936292831" [ label="(getMatchingOptions,SimpleName,79,79)" type=42 startLineNumber=79 endLineNumber=79 ]
+"130668770" [ label="({  return matchingOptions; } ,Block,79,81)" type=8 startLineNumber=79 endLineNumber=81 ]
+"2151717" [ label="(return matchingOptions; ,ReturnStatement,80,80)" type=41 startLineNumber=80 endLineNumber=80 ]
+"1644231115" [ label="(matchingOptions,SimpleName,80,80)" type=42 startLineNumber=80 endLineNumber=80 ]
+"1816147548" -> "2079179914"
+"1816147548" -> "20049680"
+"1816147548" -> "1437654187"
+"1437654187" -> "951050903"
+"951050903" -> "770947228"
+"1437654187" -> "590646109"
+"590646109" -> "1882349076"
+"1816147548" -> "936292831"
+"1816147548" -> "130668770"
+"130668770" -> "2151717"
+"2151717" -> "1644231115"
+}

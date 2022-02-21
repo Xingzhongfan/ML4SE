@@ -1,0 +1,190 @@
+digraph "DirectedGraph" {
+graph [label = "createMessage", labelloc=t, concentrate = true];
+"690686166" [ label="(/**  * Build the exception message from the specified list of options. * @param option * @param matchingOptions * @return */ private static String createMessage(final String option,final Collection<String> matchingOptions){  final StringBuilder buf=new StringBuilder(\"Ambiguous option: '\");  buf.append(option);  buf.append(\"' (could be: \");  final Iterator<String> it=matchingOptions.iterator();  while (it.hasNext()) {   buf.append(\"'\");   buf.append(it.next());   buf.append(\"'\");   if (it.hasNext()) {    buf.append(\", \");   }  }  buf.append(\")\");  return buf.toString(); } ,MethodDeclaration,34,58)" type=31 startLineNumber=34 endLineNumber=58 ]
+"576020159" [ label="(/**  * Build the exception message from the specified list of options. * @param option * @param matchingOptions * @return */ ,Javadoc,34,40)" type=29 startLineNumber=34 endLineNumber=40 ]
+"921420643" [ label="(private,Modifier,41,41)" type=83 startLineNumber=41 endLineNumber=41 ]
+"1165303897" [ label="(static,Modifier,41,41)" type=83 startLineNumber=41 endLineNumber=41 ]
+"887750041" [ label="(String,SimpleType,41,41)" type=43 startLineNumber=41 endLineNumber=41 ]
+"1010953501" [ label="(String,SimpleName,41,41)" type=42 startLineNumber=41 endLineNumber=41 ]
+"1423561005" [ label="(createMessage,SimpleName,41,41)" type=42 startLineNumber=41 endLineNumber=41 ]
+"943870983" [ label="(final String option,SingleVariableDeclaration,41,41)" type=44 startLineNumber=41 endLineNumber=41 ]
+"1136419747" [ label="(final,Modifier,41,41)" type=83 startLineNumber=41 endLineNumber=41 ]
+"1881561036" [ label="(String,SimpleType,41,41)" type=43 startLineNumber=41 endLineNumber=41 ]
+"1785507932" [ label="(String,SimpleName,41,41)" type=42 startLineNumber=41 endLineNumber=41 ]
+"1084502906" [ label="(option,SimpleName,41,41)" type=42 startLineNumber=41 endLineNumber=41 ]
+"1613095350" [ label="(final Collection<String> matchingOptions,SingleVariableDeclaration,41,41)" type=44 startLineNumber=41 endLineNumber=41 ]
+"587153993" [ label="(final,Modifier,41,41)" type=83 startLineNumber=41 endLineNumber=41 ]
+"757004314" [ label="(Collection<String>,ParameterizedType,41,41)" type=74 startLineNumber=41 endLineNumber=41 ]
+"1279271200" [ label="(Collection,SimpleType,41,41)" type=43 startLineNumber=41 endLineNumber=41 ]
+"52908367" [ label="(Collection,SimpleName,41,41)" type=42 startLineNumber=41 endLineNumber=41 ]
+"1527953000" [ label="(String,SimpleType,41,41)" type=43 startLineNumber=41 endLineNumber=41 ]
+"18242360" [ label="(String,SimpleName,41,41)" type=42 startLineNumber=41 endLineNumber=41 ]
+"1276261147" [ label="(matchingOptions,SimpleName,41,41)" type=42 startLineNumber=41 endLineNumber=41 ]
+"1971764991" [ label="({  final StringBuilder buf=new StringBuilder(\"Ambiguous option: '\");  buf.append(option);  buf.append(\"' (could be: \");  final Iterator<String> it=matchingOptions.iterator();  while (it.hasNext()) {   buf.append(\"'\");   buf.append(it.next());   buf.append(\"'\");   if (it.hasNext()) {    buf.append(\", \");   }  }  buf.append(\")\");  return buf.toString(); } ,Block,41,58)" type=8 startLineNumber=41 endLineNumber=58 ]
+"996796369" [ label="(final StringBuilder buf=new StringBuilder(\"Ambiguous option: '\"); ,VariableDeclarationStatement,42,42)" type=60 startLineNumber=42 endLineNumber=42 ]
+"135640095" [ label="(final,Modifier,42,42)" type=83 startLineNumber=42 endLineNumber=42 ]
+"1430439149" [ label="(StringBuilder,SimpleType,42,42)" type=43 startLineNumber=42 endLineNumber=42 ]
+"359922172" [ label="(StringBuilder,SimpleName,42,42)" type=42 startLineNumber=42 endLineNumber=42 ]
+"1632682988" [ label="(buf=new StringBuilder(\"Ambiguous option: '\"),VariableDeclarationFragment,42,42)" type=59 startLineNumber=42 endLineNumber=42 ]
+"1153447573" [ label="(buf,SimpleName,42,42)" type=42 startLineNumber=42 endLineNumber=42 ]
+"132577100" [ label="(new StringBuilder(\"Ambiguous option: '\"),ClassInstanceCreation,42,42)" type=14 startLineNumber=42 endLineNumber=42 ]
+"231756373" [ label="(StringBuilder,SimpleType,42,42)" type=43 startLineNumber=42 endLineNumber=42 ]
+"1786294176" [ label="(StringBuilder,SimpleName,42,42)" type=42 startLineNumber=42 endLineNumber=42 ]
+"793331940" [ label="(\"Ambiguous option: '\",StringLiteral,42,42)" type=45 startLineNumber=42 endLineNumber=42 ]
+"522553046" [ label="(buf.append(option); ,ExpressionStatement,43,43)" type=21 startLineNumber=43 endLineNumber=43 ]
+"275266973" [ label="(buf.append(option),MethodInvocation,43,43)" type=32 startLineNumber=43 endLineNumber=43 ]
+"1069716895" [ label="(buf,SimpleName,43,43)" type=42 startLineNumber=43 endLineNumber=43 ]
+"1521083627" [ label="(append,SimpleName,43,43)" type=42 startLineNumber=43 endLineNumber=43 ]
+"1770642014" [ label="(option,SimpleName,43,43)" type=42 startLineNumber=43 endLineNumber=43 ]
+"945591847" [ label="(buf.append(\"' (could be: \"); ,ExpressionStatement,44,44)" type=21 startLineNumber=44 endLineNumber=44 ]
+"328827614" [ label="(buf.append(\"' (could be: \"),MethodInvocation,44,44)" type=32 startLineNumber=44 endLineNumber=44 ]
+"109228794" [ label="(buf,SimpleName,44,44)" type=42 startLineNumber=44 endLineNumber=44 ]
+"561959774" [ label="(append,SimpleName,44,44)" type=42 startLineNumber=44 endLineNumber=44 ]
+"2110756088" [ label="(\"' (could be: \",StringLiteral,44,44)" type=45 startLineNumber=44 endLineNumber=44 ]
+"580871917" [ label="(final Iterator<String> it=matchingOptions.iterator(); ,VariableDeclarationStatement,46,46)" type=60 startLineNumber=46 endLineNumber=46 ]
+"823723302" [ label="(final,Modifier,46,46)" type=83 startLineNumber=46 endLineNumber=46 ]
+"1714078840" [ label="(Iterator<String>,ParameterizedType,46,46)" type=74 startLineNumber=46 endLineNumber=46 ]
+"1732502545" [ label="(Iterator,SimpleType,46,46)" type=43 startLineNumber=46 endLineNumber=46 ]
+"1051876890" [ label="(Iterator,SimpleName,46,46)" type=42 startLineNumber=46 endLineNumber=46 ]
+"1199262943" [ label="(String,SimpleType,46,46)" type=43 startLineNumber=46 endLineNumber=46 ]
+"2009221452" [ label="(String,SimpleName,46,46)" type=42 startLineNumber=46 endLineNumber=46 ]
+"257513673" [ label="(it=matchingOptions.iterator(),VariableDeclarationFragment,46,46)" type=59 startLineNumber=46 endLineNumber=46 ]
+"590845366" [ label="(it,SimpleName,46,46)" type=42 startLineNumber=46 endLineNumber=46 ]
+"1052195003" [ label="(matchingOptions.iterator(),MethodInvocation,46,46)" type=32 startLineNumber=46 endLineNumber=46 ]
+"1541049864" [ label="(matchingOptions,SimpleName,46,46)" type=42 startLineNumber=46 endLineNumber=46 ]
+"511707818" [ label="(iterator,SimpleName,46,46)" type=42 startLineNumber=46 endLineNumber=46 ]
+"25536233" [ label="(while (it.hasNext()) {  buf.append(\"'\");  buf.append(it.next());  buf.append(\"'\");  if (it.hasNext()) {   buf.append(\", \");  } } ,WhileStatement,47,54)" type=61 startLineNumber=47 endLineNumber=54 ]
+"116405378" [ label="(it.hasNext(),MethodInvocation,47,47)" type=32 startLineNumber=47 endLineNumber=47 ]
+"164974746" [ label="(it,SimpleName,47,47)" type=42 startLineNumber=47 endLineNumber=47 ]
+"396283472" [ label="(hasNext,SimpleName,47,47)" type=42 startLineNumber=47 endLineNumber=47 ]
+"989892772" [ label="({  buf.append(\"'\");  buf.append(it.next());  buf.append(\"'\");  if (it.hasNext()) {   buf.append(\", \");  } } ,Block,47,54)" type=8 startLineNumber=47 endLineNumber=54 ]
+"1020520290" [ label="(buf.append(\"'\"); ,ExpressionStatement,48,48)" type=21 startLineNumber=48 endLineNumber=48 ]
+"530653666" [ label="(buf.append(\"'\"),MethodInvocation,48,48)" type=32 startLineNumber=48 endLineNumber=48 ]
+"2125238280" [ label="(buf,SimpleName,48,48)" type=42 startLineNumber=48 endLineNumber=48 ]
+"1092004553" [ label="(append,SimpleName,48,48)" type=42 startLineNumber=48 endLineNumber=48 ]
+"1658699134" [ label="(\"'\",StringLiteral,48,48)" type=45 startLineNumber=48 endLineNumber=48 ]
+"1961176822" [ label="(buf.append(it.next()); ,ExpressionStatement,49,49)" type=21 startLineNumber=49 endLineNumber=49 ]
+"1859374258" [ label="(buf.append(it.next()),MethodInvocation,49,49)" type=32 startLineNumber=49 endLineNumber=49 ]
+"442987331" [ label="(buf,SimpleName,49,49)" type=42 startLineNumber=49 endLineNumber=49 ]
+"366873404" [ label="(append,SimpleName,49,49)" type=42 startLineNumber=49 endLineNumber=49 ]
+"1217467887" [ label="(it.next(),MethodInvocation,49,49)" type=32 startLineNumber=49 endLineNumber=49 ]
+"945288723" [ label="(it,SimpleName,49,49)" type=42 startLineNumber=49 endLineNumber=49 ]
+"428566321" [ label="(next,SimpleName,49,49)" type=42 startLineNumber=49 endLineNumber=49 ]
+"2087258327" [ label="(buf.append(\"'\"); ,ExpressionStatement,50,50)" type=21 startLineNumber=50 endLineNumber=50 ]
+"1016550616" [ label="(buf.append(\"'\"),MethodInvocation,50,50)" type=32 startLineNumber=50 endLineNumber=50 ]
+"1006094903" [ label="(buf,SimpleName,50,50)" type=42 startLineNumber=50 endLineNumber=50 ]
+"2030538903" [ label="(append,SimpleName,50,50)" type=42 startLineNumber=50 endLineNumber=50 ]
+"1293680848" [ label="(\"'\",StringLiteral,50,50)" type=45 startLineNumber=50 endLineNumber=50 ]
+"1261153343" [ label="(if (it.hasNext()) {  buf.append(\", \"); } ,IfStatement,51,53)" type=25 startLineNumber=51 endLineNumber=53 ]
+"1309176095" [ label="(it.hasNext(),MethodInvocation,51,51)" type=32 startLineNumber=51 endLineNumber=51 ]
+"198099809" [ label="(it,SimpleName,51,51)" type=42 startLineNumber=51 endLineNumber=51 ]
+"645482568" [ label="(hasNext,SimpleName,51,51)" type=42 startLineNumber=51 endLineNumber=51 ]
+"807752428" [ label="({  buf.append(\", \"); } ,Block,51,53)" type=8 startLineNumber=51 endLineNumber=53 ]
+"1026055550" [ label="(buf.append(\", \"); ,ExpressionStatement,52,52)" type=21 startLineNumber=52 endLineNumber=52 ]
+"1073763441" [ label="(buf.append(\", \"),MethodInvocation,52,52)" type=32 startLineNumber=52 endLineNumber=52 ]
+"752316209" [ label="(buf,SimpleName,52,52)" type=42 startLineNumber=52 endLineNumber=52 ]
+"914356853" [ label="(append,SimpleName,52,52)" type=42 startLineNumber=52 endLineNumber=52 ]
+"1229161065" [ label="(\", \",StringLiteral,52,52)" type=45 startLineNumber=52 endLineNumber=52 ]
+"195228908" [ label="(buf.append(\")\"); ,ExpressionStatement,55,55)" type=21 startLineNumber=55 endLineNumber=55 ]
+"471579726" [ label="(buf.append(\")\"),MethodInvocation,55,55)" type=32 startLineNumber=55 endLineNumber=55 ]
+"1442726378" [ label="(buf,SimpleName,55,55)" type=42 startLineNumber=55 endLineNumber=55 ]
+"16503286" [ label="(append,SimpleName,55,55)" type=42 startLineNumber=55 endLineNumber=55 ]
+"484589713" [ label="(\")\",StringLiteral,55,55)" type=45 startLineNumber=55 endLineNumber=55 ]
+"1574598287" [ label="(return buf.toString(); ,ReturnStatement,57,57)" type=41 startLineNumber=57 endLineNumber=57 ]
+"2056031695" [ label="(buf.toString(),MethodInvocation,57,57)" type=32 startLineNumber=57 endLineNumber=57 ]
+"606508809" [ label="(buf,SimpleName,57,57)" type=42 startLineNumber=57 endLineNumber=57 ]
+"718187988" [ label="(toString,SimpleName,57,57)" type=42 startLineNumber=57 endLineNumber=57 ]
+"690686166" -> "576020159"
+"690686166" -> "921420643"
+"690686166" -> "1165303897"
+"690686166" -> "887750041"
+"887750041" -> "1010953501"
+"690686166" -> "1423561005"
+"690686166" -> "943870983"
+"943870983" -> "1136419747"
+"943870983" -> "1881561036"
+"1881561036" -> "1785507932"
+"943870983" -> "1084502906"
+"690686166" -> "1613095350"
+"1613095350" -> "587153993"
+"1613095350" -> "757004314"
+"757004314" -> "1279271200"
+"1279271200" -> "52908367"
+"757004314" -> "1527953000"
+"1527953000" -> "18242360"
+"1613095350" -> "1276261147"
+"690686166" -> "1971764991"
+"1971764991" -> "996796369"
+"996796369" -> "135640095"
+"996796369" -> "1430439149"
+"1430439149" -> "359922172"
+"996796369" -> "1632682988"
+"1632682988" -> "1153447573"
+"1632682988" -> "132577100"
+"132577100" -> "231756373"
+"231756373" -> "1786294176"
+"132577100" -> "793331940"
+"1971764991" -> "522553046"
+"522553046" -> "275266973"
+"275266973" -> "1069716895"
+"275266973" -> "1521083627"
+"275266973" -> "1770642014"
+"1971764991" -> "945591847"
+"945591847" -> "328827614"
+"328827614" -> "109228794"
+"328827614" -> "561959774"
+"328827614" -> "2110756088"
+"1971764991" -> "580871917"
+"580871917" -> "823723302"
+"580871917" -> "1714078840"
+"1714078840" -> "1732502545"
+"1732502545" -> "1051876890"
+"1714078840" -> "1199262943"
+"1199262943" -> "2009221452"
+"580871917" -> "257513673"
+"257513673" -> "590845366"
+"257513673" -> "1052195003"
+"1052195003" -> "1541049864"
+"1052195003" -> "511707818"
+"1971764991" -> "25536233"
+"25536233" -> "116405378"
+"116405378" -> "164974746"
+"116405378" -> "396283472"
+"25536233" -> "989892772"
+"989892772" -> "1020520290"
+"1020520290" -> "530653666"
+"530653666" -> "2125238280"
+"530653666" -> "1092004553"
+"530653666" -> "1658699134"
+"989892772" -> "1961176822"
+"1961176822" -> "1859374258"
+"1859374258" -> "442987331"
+"1859374258" -> "366873404"
+"1859374258" -> "1217467887"
+"1217467887" -> "945288723"
+"1217467887" -> "428566321"
+"989892772" -> "2087258327"
+"2087258327" -> "1016550616"
+"1016550616" -> "1006094903"
+"1016550616" -> "2030538903"
+"1016550616" -> "1293680848"
+"989892772" -> "1261153343"
+"1261153343" -> "1309176095"
+"1309176095" -> "198099809"
+"1309176095" -> "645482568"
+"1261153343" -> "807752428"
+"807752428" -> "1026055550"
+"1026055550" -> "1073763441"
+"1073763441" -> "752316209"
+"1073763441" -> "914356853"
+"1073763441" -> "1229161065"
+"1971764991" -> "195228908"
+"195228908" -> "471579726"
+"471579726" -> "1442726378"
+"471579726" -> "16503286"
+"471579726" -> "484589713"
+"1971764991" -> "1574598287"
+"1574598287" -> "2056031695"
+"2056031695" -> "606508809"
+"2056031695" -> "718187988"
+}

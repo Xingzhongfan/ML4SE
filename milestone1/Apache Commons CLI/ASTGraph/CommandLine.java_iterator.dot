@@ -1,0 +1,30 @@
+digraph "DirectedGraph" {
+graph [label = "iterator", labelloc=t, concentrate = true];
+"1898325501" [ label="(/**  * Returns an iterator over the Option members of CommandLine. * @return an {@code Iterator} over the processed {@link Option} members of this {@link CommandLine}. */ public Iterator<Option> iterator(){  return options.iterator(); } ,MethodDeclaration,439,446)" type=31 startLineNumber=439 endLineNumber=446 ]
+"2075809815" [ label="(/**  * Returns an iterator over the Option members of CommandLine. * @return an {@code Iterator} over the processed {@link Option} members of this {@link CommandLine}. */ ,Javadoc,439,443)" type=29 startLineNumber=439 endLineNumber=443 ]
+"1949298838" [ label="(public,Modifier,444,444)" type=83 startLineNumber=444 endLineNumber=444 ]
+"1967355409" [ label="(Iterator<Option>,ParameterizedType,444,444)" type=74 startLineNumber=444 endLineNumber=444 ]
+"889891977" [ label="(Iterator,SimpleType,444,444)" type=43 startLineNumber=444 endLineNumber=444 ]
+"475603167" [ label="(Iterator,SimpleName,444,444)" type=42 startLineNumber=444 endLineNumber=444 ]
+"402249858" [ label="(Option,SimpleType,444,444)" type=43 startLineNumber=444 endLineNumber=444 ]
+"2045036434" [ label="(Option,SimpleName,444,444)" type=42 startLineNumber=444 endLineNumber=444 ]
+"426394307" [ label="(iterator,SimpleName,444,444)" type=42 startLineNumber=444 endLineNumber=444 ]
+"1281414889" [ label="({  return options.iterator(); } ,Block,444,446)" type=8 startLineNumber=444 endLineNumber=446 ]
+"352598575" [ label="(return options.iterator(); ,ReturnStatement,445,445)" type=41 startLineNumber=445 endLineNumber=445 ]
+"1250142026" [ label="(options.iterator(),MethodInvocation,445,445)" type=32 startLineNumber=445 endLineNumber=445 ]
+"20224131" [ label="(options,SimpleName,445,445)" type=42 startLineNumber=445 endLineNumber=445 ]
+"1261031890" [ label="(iterator,SimpleName,445,445)" type=42 startLineNumber=445 endLineNumber=445 ]
+"1898325501" -> "2075809815"
+"1898325501" -> "1949298838"
+"1898325501" -> "1967355409"
+"1967355409" -> "889891977"
+"889891977" -> "475603167"
+"1967355409" -> "402249858"
+"402249858" -> "2045036434"
+"1898325501" -> "426394307"
+"1898325501" -> "1281414889"
+"1281414889" -> "352598575"
+"352598575" -> "1250142026"
+"1250142026" -> "20224131"
+"1250142026" -> "1261031890"
+}

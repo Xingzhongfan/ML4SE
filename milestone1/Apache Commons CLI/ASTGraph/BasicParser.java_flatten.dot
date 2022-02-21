@@ -1,0 +1,68 @@
+digraph "DirectedGraph" {
+graph [label = "flatten", labelloc=t, concentrate = true];
+"928294079" [ label="(/**  * <p> * A simple implementation of {@link Parser}'s abstract {@link Parser#flatten(Options,String[],boolean) flatten}method. * </p> * <p> * <b>Note:</b> {@code options} and {@code stopAtNonOption} are not used in this {@code flatten} method. * </p> * @param options The command line {@link Options} * @param arguments The command line arguments to be parsed * @param stopAtNonOption Specifies whether to stop flattening when an non option is found. * @return The {@code arguments} String array. */ @Override protected String[] flatten(@SuppressWarnings(\"unused\") final Options options,final String[] arguments,@SuppressWarnings(\"unused\") final boolean stopAtNonOption){  return arguments; } ,MethodDeclaration,28,48)" type=31 startLineNumber=28 endLineNumber=48 ]
+"1647809929" [ label="(/**  * <p> * A simple implementation of {@link Parser}'s abstract {@link Parser#flatten(Options,String[],boolean) flatten}method. * </p> * <p> * <b>Note:</b> {@code options} and {@code stopAtNonOption} are not used in this {@code flatten} method. * </p> * @param options The command line {@link Options} * @param arguments The command line arguments to be parsed * @param stopAtNonOption Specifies whether to stop flattening when an non option is found. * @return The {@code arguments} String array. */ ,Javadoc,28,42)" type=29 startLineNumber=28 endLineNumber=42 ]
+"1258084361" [ label="(@Override,MarkerAnnotation,43,43)" type=78 startLineNumber=43 endLineNumber=43 ]
+"391914049" [ label="(Override,SimpleName,43,43)" type=42 startLineNumber=43 endLineNumber=43 ]
+"96406857" [ label="(protected,Modifier,44,44)" type=83 startLineNumber=44 endLineNumber=44 ]
+"1534745514" [ label="(String[],ArrayType,44,44)" type=5 startLineNumber=44 endLineNumber=44 ]
+"2003496028" [ label="(String,SimpleType,44,44)" type=43 startLineNumber=44 endLineNumber=44 ]
+"30578394" [ label="(String,SimpleName,44,44)" type=42 startLineNumber=44 endLineNumber=44 ]
+"2088371948" [ label="(flatten,SimpleName,44,44)" type=42 startLineNumber=44 endLineNumber=44 ]
+"1976870338" [ label="(@SuppressWarnings(\"unused\") final Options options,SingleVariableDeclaration,44,44)" type=44 startLineNumber=44 endLineNumber=44 ]
+"1434234664" [ label="(@SuppressWarnings(\"unused\"),SingleMemberAnnotation,44,44)" type=79 startLineNumber=44 endLineNumber=44 ]
+"1083021083" [ label="(SuppressWarnings,SimpleName,44,44)" type=42 startLineNumber=44 endLineNumber=44 ]
+"1819063424" [ label="(\"unused\",StringLiteral,44,44)" type=45 startLineNumber=44 endLineNumber=44 ]
+"1011279482" [ label="(final,Modifier,44,44)" type=83 startLineNumber=44 endLineNumber=44 ]
+"208866101" [ label="(Options,SimpleType,44,44)" type=43 startLineNumber=44 endLineNumber=44 ]
+"543846639" [ label="(Options,SimpleName,44,44)" type=42 startLineNumber=44 endLineNumber=44 ]
+"690686166" [ label="(options,SimpleName,44,44)" type=42 startLineNumber=44 endLineNumber=44 ]
+"576020159" [ label="(final String[] arguments,SingleVariableDeclaration,44,44)" type=44 startLineNumber=44 endLineNumber=44 ]
+"921420643" [ label="(final,Modifier,44,44)" type=83 startLineNumber=44 endLineNumber=44 ]
+"1165303897" [ label="(String[],ArrayType,44,44)" type=5 startLineNumber=44 endLineNumber=44 ]
+"887750041" [ label="(String,SimpleType,44,44)" type=43 startLineNumber=44 endLineNumber=44 ]
+"1010953501" [ label="(String,SimpleName,44,44)" type=42 startLineNumber=44 endLineNumber=44 ]
+"1423561005" [ label="(arguments,SimpleName,44,44)" type=42 startLineNumber=44 endLineNumber=44 ]
+"943870983" [ label="(@SuppressWarnings(\"unused\") final boolean stopAtNonOption,SingleVariableDeclaration,45,45)" type=44 startLineNumber=45 endLineNumber=45 ]
+"1136419747" [ label="(@SuppressWarnings(\"unused\"),SingleMemberAnnotation,45,45)" type=79 startLineNumber=45 endLineNumber=45 ]
+"1881561036" [ label="(SuppressWarnings,SimpleName,45,45)" type=42 startLineNumber=45 endLineNumber=45 ]
+"1785507932" [ label="(\"unused\",StringLiteral,45,45)" type=45 startLineNumber=45 endLineNumber=45 ]
+"1084502906" [ label="(final,Modifier,45,45)" type=83 startLineNumber=45 endLineNumber=45 ]
+"1613095350" [ label="(boolean,PrimitiveType,45,45)" type=39 startLineNumber=45 endLineNumber=45 ]
+"587153993" [ label="(stopAtNonOption,SimpleName,45,45)" type=42 startLineNumber=45 endLineNumber=45 ]
+"757004314" [ label="({  return arguments; } ,Block,45,48)" type=8 startLineNumber=45 endLineNumber=48 ]
+"1279271200" [ label="(return arguments; ,ReturnStatement,47,47)" type=41 startLineNumber=47 endLineNumber=47 ]
+"52908367" [ label="(arguments,SimpleName,47,47)" type=42 startLineNumber=47 endLineNumber=47 ]
+"928294079" -> "1647809929"
+"928294079" -> "1258084361"
+"1258084361" -> "391914049"
+"928294079" -> "96406857"
+"928294079" -> "1534745514"
+"1534745514" -> "2003496028"
+"2003496028" -> "30578394"
+"928294079" -> "2088371948"
+"928294079" -> "1976870338"
+"1976870338" -> "1434234664"
+"1434234664" -> "1083021083"
+"1434234664" -> "1819063424"
+"1976870338" -> "1011279482"
+"1976870338" -> "208866101"
+"208866101" -> "543846639"
+"1976870338" -> "690686166"
+"928294079" -> "576020159"
+"576020159" -> "921420643"
+"576020159" -> "1165303897"
+"1165303897" -> "887750041"
+"887750041" -> "1010953501"
+"576020159" -> "1423561005"
+"928294079" -> "943870983"
+"943870983" -> "1136419747"
+"1136419747" -> "1881561036"
+"1136419747" -> "1785507932"
+"943870983" -> "1084502906"
+"943870983" -> "1613095350"
+"943870983" -> "587153993"
+"928294079" -> "757004314"
+"757004314" -> "1279271200"
+"1279271200" -> "52908367"
+}

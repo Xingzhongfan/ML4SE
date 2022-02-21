@@ -1,0 +1,18 @@
+digraph "DirectedGraph" {
+graph [label = "build", labelloc=t, concentrate = true];
+"1484673893" [ label="(public CommandLine build(){  return commandLine; } ,MethodDeclaration,72,74)" type=31 startLineNumber=72 endLineNumber=74 ]
+"587003819" [ label="(public,Modifier,72,72)" type=83 startLineNumber=72 endLineNumber=72 ]
+"769798433" [ label="(CommandLine,SimpleType,72,72)" type=43 startLineNumber=72 endLineNumber=72 ]
+"1665620686" [ label="(CommandLine,SimpleName,72,72)" type=42 startLineNumber=72 endLineNumber=72 ]
+"1233705144" [ label="(build,SimpleName,72,72)" type=42 startLineNumber=72 endLineNumber=72 ]
+"202125197" [ label="({  return commandLine; } ,Block,72,74)" type=8 startLineNumber=72 endLineNumber=74 ]
+"811301908" [ label="(return commandLine; ,ReturnStatement,73,73)" type=41 startLineNumber=73 endLineNumber=73 ]
+"1762902523" [ label="(commandLine,SimpleName,73,73)" type=42 startLineNumber=73 endLineNumber=73 ]
+"1484673893" -> "587003819"
+"1484673893" -> "769798433"
+"769798433" -> "1665620686"
+"1484673893" -> "1233705144"
+"1484673893" -> "202125197"
+"202125197" -> "811301908"
+"811301908" -> "1762902523"
+}

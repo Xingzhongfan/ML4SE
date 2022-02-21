@@ -1,0 +1,86 @@
+digraph "DirectedGraph" {
+graph [label = "getOptionObject", labelloc=t, concentrate = true];
+"1462044018" [ label="(/**  * Return the {@code Object} type of this {@code Option}. * @param opt the name of the option. * @return the type of this {@code Option}. * @deprecated due to System.err message. Instead use getParsedOptionValue(String) */ @Deprecated public Object getOptionObject(final String opt){  try {   return getParsedOptionValue(opt);  } catch ( final ParseException pe) {   System.err.println(\"Exception found converting \" + opt + \" to desired type: \"+ pe.getMessage());   return null;  } } ,MethodDeclaration,145,160)" type=31 startLineNumber=145 endLineNumber=160 ]
+"1443435931" [ label="(/**  * Return the {@code Object} type of this {@code Option}. * @param opt the name of the option. * @return the type of this {@code Option}. * @deprecated due to System.err message. Instead use getParsedOptionValue(String) */ ,Javadoc,145,151)" type=29 startLineNumber=145 endLineNumber=151 ]
+"555273695" [ label="(@Deprecated,MarkerAnnotation,152,152)" type=78 startLineNumber=152 endLineNumber=152 ]
+"396883763" [ label="(Deprecated,SimpleName,152,152)" type=42 startLineNumber=152 endLineNumber=152 ]
+"1750498848" [ label="(public,Modifier,153,153)" type=83 startLineNumber=153 endLineNumber=153 ]
+"1995250556" [ label="(Object,SimpleType,153,153)" type=43 startLineNumber=153 endLineNumber=153 ]
+"301749835" [ label="(Object,SimpleName,153,153)" type=42 startLineNumber=153 endLineNumber=153 ]
+"961160488" [ label="(getOptionObject,SimpleName,153,153)" type=42 startLineNumber=153 endLineNumber=153 ]
+"1647766367" [ label="(final String opt,SingleVariableDeclaration,153,153)" type=44 startLineNumber=153 endLineNumber=153 ]
+"2082351774" [ label="(final,Modifier,153,153)" type=83 startLineNumber=153 endLineNumber=153 ]
+"262366552" [ label="(String,SimpleType,153,153)" type=43 startLineNumber=153 endLineNumber=153 ]
+"1730704097" [ label="(String,SimpleName,153,153)" type=42 startLineNumber=153 endLineNumber=153 ]
+"848363848" [ label="(opt,SimpleName,153,153)" type=42 startLineNumber=153 endLineNumber=153 ]
+"1062635358" [ label="({  try {   return getParsedOptionValue(opt);  } catch ( final ParseException pe) {   System.err.println(\"Exception found converting \" + opt + \" to desired type: \"+ pe.getMessage());   return null;  } } ,Block,153,160)" type=8 startLineNumber=153 endLineNumber=160 ]
+"726379593" [ label="(try {  return getParsedOptionValue(opt); } catch (final ParseException pe) {  System.err.println(\"Exception found converting \" + opt + \" to desired type: \"+ pe.getMessage());  return null; } ,TryStatement,154,159)" type=54 startLineNumber=154 endLineNumber=159 ]
+"265321659" [ label="({  return getParsedOptionValue(opt); } ,Block,154,156)" type=8 startLineNumber=154 endLineNumber=156 ]
+"896644936" [ label="(return getParsedOptionValue(opt); ,ReturnStatement,155,155)" type=41 startLineNumber=155 endLineNumber=155 ]
+"1050065615" [ label="(getParsedOptionValue(opt),MethodInvocation,155,155)" type=32 startLineNumber=155 endLineNumber=155 ]
+"1212772528" [ label="(getParsedOptionValue,SimpleName,155,155)" type=42 startLineNumber=155 endLineNumber=155 ]
+"1148254374" [ label="(opt,SimpleName,155,155)" type=42 startLineNumber=155 endLineNumber=155 ]
+"2089016471" [ label="(catch (final ParseException pe) {  System.err.println(\"Exception found converting \" + opt + \" to desired type: \"+ pe.getMessage());  return null; } ,CatchClause,156,159)" type=12 startLineNumber=156 endLineNumber=159 ]
+"2001223946" [ label="(final ParseException pe,SingleVariableDeclaration,156,156)" type=44 startLineNumber=156 endLineNumber=156 ]
+"1946645411" [ label="(final,Modifier,156,156)" type=83 startLineNumber=156 endLineNumber=156 ]
+"938545229" [ label="(ParseException,SimpleType,156,156)" type=43 startLineNumber=156 endLineNumber=156 ]
+"1433666880" [ label="(ParseException,SimpleName,156,156)" type=42 startLineNumber=156 endLineNumber=156 ]
+"1610702581" [ label="(pe,SimpleName,156,156)" type=42 startLineNumber=156 endLineNumber=156 ]
+"794075965" [ label="({  System.err.println(\"Exception found converting \" + opt + \" to desired type: \"+ pe.getMessage());  return null; } ,Block,156,159)" type=8 startLineNumber=156 endLineNumber=159 ]
+"270056930" [ label="(System.err.println(\"Exception found converting \" + opt + \" to desired type: \"+ pe.getMessage()); ,ExpressionStatement,157,157)" type=21 startLineNumber=157 endLineNumber=157 ]
+"1706292388" [ label="(System.err.println(\"Exception found converting \" + opt + \" to desired type: \"+ pe.getMessage()),MethodInvocation,157,157)" type=32 startLineNumber=157 endLineNumber=157 ]
+"254801937" [ label="(System.err,QualifiedName,157,157)" type=40 startLineNumber=157 endLineNumber=157 ]
+"90767234" [ label="(System,SimpleName,157,157)" type=42 startLineNumber=157 endLineNumber=157 ]
+"1355457888" [ label="(err,SimpleName,157,157)" type=42 startLineNumber=157 endLineNumber=157 ]
+"707161353" [ label="(println,SimpleName,157,157)" type=42 startLineNumber=157 endLineNumber=157 ]
+"1522132780" [ label="(\"Exception found converting \" + opt + \" to desired type: \"+ pe.getMessage(),InfixExpression,157,157)" type=27 startLineNumber=157 endLineNumber=157 ]
+"409962262" [ label="(\"Exception found converting \",StringLiteral,157,157)" type=45 startLineNumber=157 endLineNumber=157 ]
+"495702238" [ label="(opt,SimpleName,157,157)" type=42 startLineNumber=157 endLineNumber=157 ]
+"73181251" [ label="(\" to desired type: \",StringLiteral,157,157)" type=45 startLineNumber=157 endLineNumber=157 ]
+"298430307" [ label="(pe.getMessage(),MethodInvocation,157,157)" type=32 startLineNumber=157 endLineNumber=157 ]
+"1970982267" [ label="(pe,SimpleName,157,157)" type=42 startLineNumber=157 endLineNumber=157 ]
+"917831210" [ label="(getMessage,SimpleName,157,157)" type=42 startLineNumber=157 endLineNumber=157 ]
+"1464555023" [ label="(return null; ,ReturnStatement,158,158)" type=41 startLineNumber=158 endLineNumber=158 ]
+"195381554" [ label="(null,NullLiteral,158,158)" type=33 startLineNumber=158 endLineNumber=158 ]
+"1462044018" -> "1443435931"
+"1462044018" -> "555273695"
+"555273695" -> "396883763"
+"1462044018" -> "1750498848"
+"1462044018" -> "1995250556"
+"1995250556" -> "301749835"
+"1462044018" -> "961160488"
+"1462044018" -> "1647766367"
+"1647766367" -> "2082351774"
+"1647766367" -> "262366552"
+"262366552" -> "1730704097"
+"1647766367" -> "848363848"
+"1462044018" -> "1062635358"
+"1062635358" -> "726379593"
+"726379593" -> "265321659"
+"265321659" -> "896644936"
+"896644936" -> "1050065615"
+"1050065615" -> "1212772528"
+"1050065615" -> "1148254374"
+"726379593" -> "2089016471"
+"2089016471" -> "2001223946"
+"2001223946" -> "1946645411"
+"2001223946" -> "938545229"
+"938545229" -> "1433666880"
+"2001223946" -> "1610702581"
+"2089016471" -> "794075965"
+"794075965" -> "270056930"
+"270056930" -> "1706292388"
+"1706292388" -> "254801937"
+"254801937" -> "90767234"
+"254801937" -> "1355457888"
+"1706292388" -> "707161353"
+"1706292388" -> "1522132780"
+"1522132780" -> "409962262"
+"1522132780" -> "495702238"
+"1522132780" -> "73181251"
+"1522132780" -> "298430307"
+"298430307" -> "1970982267"
+"298430307" -> "917831210"
+"794075965" -> "1464555023"
+"1464555023" -> "195381554"
+}

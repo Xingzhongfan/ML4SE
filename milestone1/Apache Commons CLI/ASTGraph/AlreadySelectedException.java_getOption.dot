@@ -1,0 +1,20 @@
+digraph "DirectedGraph" {
+graph [label = "getOption", labelloc=t, concentrate = true];
+"522553046" [ label="(/**  * Gets the option that was added to the group and triggered the exception. * @return the related option * @since 1.2 */ public Option getOption(){  return option; } ,MethodDeclaration,63,71)" type=31 startLineNumber=63 endLineNumber=71 ]
+"275266973" [ label="(/**  * Gets the option that was added to the group and triggered the exception. * @return the related option * @since 1.2 */ ,Javadoc,63,68)" type=29 startLineNumber=63 endLineNumber=68 ]
+"1069716895" [ label="(public,Modifier,69,69)" type=83 startLineNumber=69 endLineNumber=69 ]
+"1521083627" [ label="(Option,SimpleType,69,69)" type=43 startLineNumber=69 endLineNumber=69 ]
+"1770642014" [ label="(Option,SimpleName,69,69)" type=42 startLineNumber=69 endLineNumber=69 ]
+"945591847" [ label="(getOption,SimpleName,69,69)" type=42 startLineNumber=69 endLineNumber=69 ]
+"328827614" [ label="({  return option; } ,Block,69,71)" type=8 startLineNumber=69 endLineNumber=71 ]
+"109228794" [ label="(return option; ,ReturnStatement,70,70)" type=41 startLineNumber=70 endLineNumber=70 ]
+"561959774" [ label="(option,SimpleName,70,70)" type=42 startLineNumber=70 endLineNumber=70 ]
+"522553046" -> "275266973"
+"522553046" -> "1069716895"
+"522553046" -> "1521083627"
+"1521083627" -> "1770642014"
+"522553046" -> "945591847"
+"522553046" -> "328827614"
+"328827614" -> "109228794"
+"109228794" -> "561959774"
+}

@@ -1,0 +1,188 @@
+digraph "DirectedGraph" {
+graph [label = "getOptionProperties", labelloc=t, concentrate = true];
+"640113647" [ label="(/**  * Retrieve the map of values associated to the option. This is convenient for options specifying Java properties like * <code>-Dparam1=value1 * -Dparam2=value2</code>. The first argument of the option is the key, and the 2nd argument is the value. If the option * has only one argument ({@code -Dfoo}) it is considered as a boolean flag and the value is {@code \"true\"}. * @param opt name of the option. * @return The Properties mapped by the option, never {@code null} even if the option doesn't exists. * @since 1.2 */ public Properties getOptionProperties(final String opt){  final Properties props=new Properties();  for ( final Option option : options) {   if (opt.equals(option.getOpt()) || opt.equals(option.getLongOpt())) {    final List<String> values=option.getValuesList();    if (values.size() >= 2) {     props.put(values.get(0),values.get(1));    } else    if (values.size() == 1) {     props.put(values.get(0),\"true\");    }   }  }  return props; } ,MethodDeclaration,191,218)" type=31 startLineNumber=191 endLineNumber=218 ]
+"124323713" [ label="(/**  * Retrieve the map of values associated to the option. This is convenient for options specifying Java properties like * <code>-Dparam1=value1 * -Dparam2=value2</code>. The first argument of the option is the key, and the 2nd argument is the value. If the option * has only one argument ({@code -Dfoo}) it is considered as a boolean flag and the value is {@code \"true\"}. * @param opt name of the option. * @return The Properties mapped by the option, never {@code null} even if the option doesn't exists. * @since 1.2 */ ,Javadoc,191,200)" type=29 startLineNumber=191 endLineNumber=200 ]
+"2011997442" [ label="(public,Modifier,201,201)" type=83 startLineNumber=201 endLineNumber=201 ]
+"843512726" [ label="(Properties,SimpleType,201,201)" type=43 startLineNumber=201 endLineNumber=201 ]
+"773989906" [ label="(Properties,SimpleName,201,201)" type=42 startLineNumber=201 endLineNumber=201 ]
+"1631086936" [ label="(getOptionProperties,SimpleName,201,201)" type=42 startLineNumber=201 endLineNumber=201 ]
+"1944978632" [ label="(final String opt,SingleVariableDeclaration,201,201)" type=44 startLineNumber=201 endLineNumber=201 ]
+"1987169128" [ label="(final,Modifier,201,201)" type=83 startLineNumber=201 endLineNumber=201 ]
+"1239183618" [ label="(String,SimpleType,201,201)" type=43 startLineNumber=201 endLineNumber=201 ]
+"1804379080" [ label="(String,SimpleName,201,201)" type=42 startLineNumber=201 endLineNumber=201 ]
+"1757880885" [ label="(opt,SimpleName,201,201)" type=42 startLineNumber=201 endLineNumber=201 ]
+"278240974" [ label="({  final Properties props=new Properties();  for ( final Option option : options) {   if (opt.equals(option.getOpt()) || opt.equals(option.getLongOpt())) {    final List<String> values=option.getValuesList();    if (values.size() >= 2) {     props.put(values.get(0),values.get(1));    } else    if (values.size() == 1) {     props.put(values.get(0),\"true\");    }   }  }  return props; } ,Block,201,218)" type=8 startLineNumber=201 endLineNumber=218 ]
+"980138431" [ label="(final Properties props=new Properties(); ,VariableDeclarationStatement,202,202)" type=60 startLineNumber=202 endLineNumber=202 ]
+"888655833" [ label="(final,Modifier,202,202)" type=83 startLineNumber=202 endLineNumber=202 ]
+"1710265848" [ label="(Properties,SimpleType,202,202)" type=43 startLineNumber=202 endLineNumber=202 ]
+"1504642150" [ label="(Properties,SimpleName,202,202)" type=42 startLineNumber=202 endLineNumber=202 ]
+"1047460013" [ label="(props=new Properties(),VariableDeclarationFragment,202,202)" type=59 startLineNumber=202 endLineNumber=202 ]
+"879583678" [ label="(props,SimpleName,202,202)" type=42 startLineNumber=202 endLineNumber=202 ]
+"1431530910" [ label="(new Properties(),ClassInstanceCreation,202,202)" type=14 startLineNumber=202 endLineNumber=202 ]
+"1954471782" [ label="(Properties,SimpleType,202,202)" type=43 startLineNumber=202 endLineNumber=202 ]
+"1025309396" [ label="(Properties,SimpleName,202,202)" type=42 startLineNumber=202 endLineNumber=202 ]
+"1646464088" [ label="(for (final Option option : options) {  if (opt.equals(option.getOpt()) || opt.equals(option.getLongOpt())) {   final List<String> values=option.getValuesList();   if (values.size() >= 2) {    props.put(values.get(0),values.get(1));   } else   if (values.size() == 1) {    props.put(values.get(0),\"true\");   }  } } ,EnhancedForStatement,204,215)" type=70 startLineNumber=204 endLineNumber=215 ]
+"752001567" [ label="(final Option option,SingleVariableDeclaration,204,204)" type=44 startLineNumber=204 endLineNumber=204 ]
+"777379084" [ label="(final,Modifier,204,204)" type=83 startLineNumber=204 endLineNumber=204 ]
+"1950701640" [ label="(Option,SimpleType,204,204)" type=43 startLineNumber=204 endLineNumber=204 ]
+"243194708" [ label="(Option,SimpleName,204,204)" type=42 startLineNumber=204 endLineNumber=204 ]
+"931480286" [ label="(option,SimpleName,204,204)" type=42 startLineNumber=204 endLineNumber=204 ]
+"926434463" [ label="(options,SimpleName,204,204)" type=42 startLineNumber=204 endLineNumber=204 ]
+"1776409896" [ label="({  if (opt.equals(option.getOpt()) || opt.equals(option.getLongOpt())) {   final List<String> values=option.getValuesList();   if (values.size() >= 2) {    props.put(values.get(0),values.get(1));   } else   if (values.size() == 1) {    props.put(values.get(0),\"true\");   }  } } ,Block,204,215)" type=8 startLineNumber=204 endLineNumber=215 ]
+"297602875" [ label="(if (opt.equals(option.getOpt()) || opt.equals(option.getLongOpt())) {  final List<String> values=option.getValuesList();  if (values.size() >= 2) {   props.put(values.get(0),values.get(1));  } else  if (values.size() == 1) {   props.put(values.get(0),\"true\");  } } ,IfStatement,205,214)" type=25 startLineNumber=205 endLineNumber=214 ]
+"204684384" [ label="(opt.equals(option.getOpt()) || opt.equals(option.getLongOpt()),InfixExpression,205,205)" type=27 startLineNumber=205 endLineNumber=205 ]
+"2044366277" [ label="(opt.equals(option.getOpt()),MethodInvocation,205,205)" type=32 startLineNumber=205 endLineNumber=205 ]
+"515184459" [ label="(opt,SimpleName,205,205)" type=42 startLineNumber=205 endLineNumber=205 ]
+"1728579441" [ label="(equals,SimpleName,205,205)" type=42 startLineNumber=205 endLineNumber=205 ]
+"1926096844" [ label="(option.getOpt(),MethodInvocation,205,205)" type=32 startLineNumber=205 endLineNumber=205 ]
+"1607792885" [ label="(option,SimpleName,205,205)" type=42 startLineNumber=205 endLineNumber=205 ]
+"1768792843" [ label="(getOpt,SimpleName,205,205)" type=42 startLineNumber=205 endLineNumber=205 ]
+"1316557528" [ label="(opt.equals(option.getLongOpt()),MethodInvocation,205,205)" type=32 startLineNumber=205 endLineNumber=205 ]
+"1402433372" [ label="(opt,SimpleName,205,205)" type=42 startLineNumber=205 endLineNumber=205 ]
+"737945227" [ label="(equals,SimpleName,205,205)" type=42 startLineNumber=205 endLineNumber=205 ]
+"797814020" [ label="(option.getLongOpt(),MethodInvocation,205,205)" type=32 startLineNumber=205 endLineNumber=205 ]
+"702846463" [ label="(option,SimpleName,205,205)" type=42 startLineNumber=205 endLineNumber=205 ]
+"1105322512" [ label="(getLongOpt,SimpleName,205,205)" type=42 startLineNumber=205 endLineNumber=205 ]
+"199449817" [ label="({  final List<String> values=option.getValuesList();  if (values.size() >= 2) {   props.put(values.get(0),values.get(1));  } else  if (values.size() == 1) {   props.put(values.get(0),\"true\");  } } ,Block,205,214)" type=8 startLineNumber=205 endLineNumber=214 ]
+"1229202732" [ label="(final List<String> values=option.getValuesList(); ,VariableDeclarationStatement,206,206)" type=60 startLineNumber=206 endLineNumber=206 ]
+"1149377174" [ label="(final,Modifier,206,206)" type=83 startLineNumber=206 endLineNumber=206 ]
+"171802996" [ label="(List<String>,ParameterizedType,206,206)" type=74 startLineNumber=206 endLineNumber=206 ]
+"464064894" [ label="(List,SimpleType,206,206)" type=43 startLineNumber=206 endLineNumber=206 ]
+"1932274274" [ label="(List,SimpleName,206,206)" type=42 startLineNumber=206 endLineNumber=206 ]
+"657381435" [ label="(String,SimpleType,206,206)" type=43 startLineNumber=206 endLineNumber=206 ]
+"1107217291" [ label="(String,SimpleName,206,206)" type=42 startLineNumber=206 endLineNumber=206 ]
+"302977067" [ label="(values=option.getValuesList(),VariableDeclarationFragment,206,206)" type=59 startLineNumber=206 endLineNumber=206 ]
+"6444850" [ label="(values,SimpleName,206,206)" type=42 startLineNumber=206 endLineNumber=206 ]
+"1373419525" [ label="(option.getValuesList(),MethodInvocation,206,206)" type=32 startLineNumber=206 endLineNumber=206 ]
+"1716093734" [ label="(option,SimpleName,206,206)" type=42 startLineNumber=206 endLineNumber=206 ]
+"212683148" [ label="(getValuesList,SimpleName,206,206)" type=42 startLineNumber=206 endLineNumber=206 ]
+"509891820" [ label="(if (values.size() >= 2) {  props.put(values.get(0),values.get(1)); } else if (values.size() == 1) {  props.put(values.get(0),\"true\"); } ,IfStatement,207,213)" type=25 startLineNumber=207 endLineNumber=213 ]
+"718068661" [ label="(values.size() >= 2,InfixExpression,207,207)" type=27 startLineNumber=207 endLineNumber=207 ]
+"11939193" [ label="(values.size(),MethodInvocation,207,207)" type=32 startLineNumber=207 endLineNumber=207 ]
+"1714550218" [ label="(values,SimpleName,207,207)" type=42 startLineNumber=207 endLineNumber=207 ]
+"1523457748" [ label="(size,SimpleName,207,207)" type=42 startLineNumber=207 endLineNumber=207 ]
+"370370379" [ label="(2,NumberLiteral,207,207)" type=34 startLineNumber=207 endLineNumber=207 ]
+"671046933" [ label="({  props.put(values.get(0),values.get(1)); } ,Block,207,210)" type=8 startLineNumber=207 endLineNumber=210 ]
+"1309238149" [ label="(props.put(values.get(0),values.get(1)); ,ExpressionStatement,209,209)" type=21 startLineNumber=209 endLineNumber=209 ]
+"1687940142" [ label="(props.put(values.get(0),values.get(1)),MethodInvocation,209,209)" type=32 startLineNumber=209 endLineNumber=209 ]
+"1765795529" [ label="(props,SimpleName,209,209)" type=42 startLineNumber=209 endLineNumber=209 ]
+"888473870" [ label="(put,SimpleName,209,209)" type=42 startLineNumber=209 endLineNumber=209 ]
+"837108062" [ label="(values.get(0),MethodInvocation,209,209)" type=32 startLineNumber=209 endLineNumber=209 ]
+"170144208" [ label="(values,SimpleName,209,209)" type=42 startLineNumber=209 endLineNumber=209 ]
+"482052083" [ label="(get,SimpleName,209,209)" type=42 startLineNumber=209 endLineNumber=209 ]
+"1720339" [ label="(0,NumberLiteral,209,209)" type=34 startLineNumber=209 endLineNumber=209 ]
+"460201727" [ label="(values.get(1),MethodInvocation,209,209)" type=32 startLineNumber=209 endLineNumber=209 ]
+"812586739" [ label="(values,SimpleName,209,209)" type=42 startLineNumber=209 endLineNumber=209 ]
+"1881901842" [ label="(get,SimpleName,209,209)" type=42 startLineNumber=209 endLineNumber=209 ]
+"585324508" [ label="(1,NumberLiteral,209,209)" type=34 startLineNumber=209 endLineNumber=209 ]
+"1234250905" [ label="(if (values.size() == 1) {  props.put(values.get(0),\"true\"); } ,IfStatement,210,213)" type=25 startLineNumber=210 endLineNumber=213 ]
+"16868310" [ label="(values.size() == 1,InfixExpression,210,210)" type=27 startLineNumber=210 endLineNumber=210 ]
+"769530879" [ label="(values.size(),MethodInvocation,210,210)" type=32 startLineNumber=210 endLineNumber=210 ]
+"364639279" [ label="(values,SimpleName,210,210)" type=42 startLineNumber=210 endLineNumber=210 ]
+"1427040229" [ label="(size,SimpleName,210,210)" type=42 startLineNumber=210 endLineNumber=210 ]
+"1604002113" [ label="(1,NumberLiteral,210,210)" type=34 startLineNumber=210 endLineNumber=210 ]
+"38262958" [ label="({  props.put(values.get(0),\"true\"); } ,Block,210,213)" type=8 startLineNumber=210 endLineNumber=213 ]
+"1217875525" [ label="(props.put(values.get(0),\"true\"); ,ExpressionStatement,212,212)" type=21 startLineNumber=212 endLineNumber=212 ]
+"1787079037" [ label="(props.put(values.get(0),\"true\"),MethodInvocation,212,212)" type=32 startLineNumber=212 endLineNumber=212 ]
+"1813187653" [ label="(props,SimpleName,212,212)" type=42 startLineNumber=212 endLineNumber=212 ]
+"1353530305" [ label="(put,SimpleName,212,212)" type=42 startLineNumber=212 endLineNumber=212 ]
+"574268151" [ label="(values.get(0),MethodInvocation,212,212)" type=32 startLineNumber=212 endLineNumber=212 ]
+"1832532108" [ label="(values,SimpleName,212,212)" type=42 startLineNumber=212 endLineNumber=212 ]
+"423583818" [ label="(get,SimpleName,212,212)" type=42 startLineNumber=212 endLineNumber=212 ]
+"552936351" [ label="(0,NumberLiteral,212,212)" type=34 startLineNumber=212 endLineNumber=212 ]
+"1471086700" [ label="(\"true\",StringLiteral,212,212)" type=45 startLineNumber=212 endLineNumber=212 ]
+"1810742349" [ label="(return props; ,ReturnStatement,217,217)" type=41 startLineNumber=217 endLineNumber=217 ]
+"154319946" [ label="(props,SimpleName,217,217)" type=42 startLineNumber=217 endLineNumber=217 ]
+"640113647" -> "124323713"
+"640113647" -> "2011997442"
+"640113647" -> "843512726"
+"843512726" -> "773989906"
+"640113647" -> "1631086936"
+"640113647" -> "1944978632"
+"1944978632" -> "1987169128"
+"1944978632" -> "1239183618"
+"1239183618" -> "1804379080"
+"1944978632" -> "1757880885"
+"640113647" -> "278240974"
+"278240974" -> "980138431"
+"980138431" -> "888655833"
+"980138431" -> "1710265848"
+"1710265848" -> "1504642150"
+"980138431" -> "1047460013"
+"1047460013" -> "879583678"
+"1047460013" -> "1431530910"
+"1431530910" -> "1954471782"
+"1954471782" -> "1025309396"
+"278240974" -> "1646464088"
+"1646464088" -> "752001567"
+"752001567" -> "777379084"
+"752001567" -> "1950701640"
+"1950701640" -> "243194708"
+"752001567" -> "931480286"
+"1646464088" -> "926434463"
+"1646464088" -> "1776409896"
+"1776409896" -> "297602875"
+"297602875" -> "204684384"
+"204684384" -> "2044366277"
+"2044366277" -> "515184459"
+"2044366277" -> "1728579441"
+"2044366277" -> "1926096844"
+"1926096844" -> "1607792885"
+"1926096844" -> "1768792843"
+"204684384" -> "1316557528"
+"1316557528" -> "1402433372"
+"1316557528" -> "737945227"
+"1316557528" -> "797814020"
+"797814020" -> "702846463"
+"797814020" -> "1105322512"
+"297602875" -> "199449817"
+"199449817" -> "1229202732"
+"1229202732" -> "1149377174"
+"1229202732" -> "171802996"
+"171802996" -> "464064894"
+"464064894" -> "1932274274"
+"171802996" -> "657381435"
+"657381435" -> "1107217291"
+"1229202732" -> "302977067"
+"302977067" -> "6444850"
+"302977067" -> "1373419525"
+"1373419525" -> "1716093734"
+"1373419525" -> "212683148"
+"199449817" -> "509891820"
+"509891820" -> "718068661"
+"718068661" -> "11939193"
+"11939193" -> "1714550218"
+"11939193" -> "1523457748"
+"718068661" -> "370370379"
+"509891820" -> "671046933"
+"671046933" -> "1309238149"
+"1309238149" -> "1687940142"
+"1687940142" -> "1765795529"
+"1687940142" -> "888473870"
+"1687940142" -> "837108062"
+"837108062" -> "170144208"
+"837108062" -> "482052083"
+"837108062" -> "1720339"
+"1687940142" -> "460201727"
+"460201727" -> "812586739"
+"460201727" -> "1881901842"
+"460201727" -> "585324508"
+"509891820" -> "1234250905"
+"1234250905" -> "16868310"
+"16868310" -> "769530879"
+"769530879" -> "364639279"
+"769530879" -> "1427040229"
+"16868310" -> "1604002113"
+"1234250905" -> "38262958"
+"38262958" -> "1217875525"
+"1217875525" -> "1787079037"
+"1787079037" -> "1813187653"
+"1787079037" -> "1353530305"
+"1787079037" -> "574268151"
+"574268151" -> "1832532108"
+"574268151" -> "423583818"
+"574268151" -> "552936351"
+"1787079037" -> "1471086700"
+"278240974" -> "1810742349"
+"1810742349" -> "154319946"
+}

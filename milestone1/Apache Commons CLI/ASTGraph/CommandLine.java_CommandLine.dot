@@ -1,0 +1,12 @@
+digraph "DirectedGraph" {
+graph [label = "CommandLine", labelloc=t, concentrate = true];
+"1725008249" [ label="(/**  * Creates a command line. */ protected CommandLine(){ } ,MethodDeclaration,86,91)" type=31 startLineNumber=86 endLineNumber=91 ]
+"197964393" [ label="(/**  * Creates a command line. */ ,Javadoc,86,88)" type=29 startLineNumber=86 endLineNumber=88 ]
+"1620890840" [ label="(protected,Modifier,89,89)" type=83 startLineNumber=89 endLineNumber=89 ]
+"402115881" [ label="(CommandLine,SimpleName,89,89)" type=42 startLineNumber=89 endLineNumber=89 ]
+"2106000623" [ label="({ } ,Block,89,91)" type=8 startLineNumber=89 endLineNumber=91 ]
+"1725008249" -> "197964393"
+"1725008249" -> "1620890840"
+"1725008249" -> "402115881"
+"1725008249" -> "2106000623"
+}
